@@ -1,4 +1,4 @@
-body {
+/* body {
   --black: #000000;
   --ash-black: #222;
   --white: #fafafa;
@@ -145,7 +145,7 @@ section {
   align-items: center;
   position: relative;
   scroll-snap-align: center;
-  perspective: 500px;
+  perspective: 100px;
 }
 
 section > div {
@@ -176,4 +176,24 @@ img {
   height: 5px;
   background: var(--accent);
   bottom: 100px;
+}
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jacquard+24&display=swap");
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "DM Serif Display";
+}
+body {
+  background: #000;
+  color: #fff;
+}
+p {
+  font-size: 70px;
+  margin: 0;
+  text-align: left;
+  line-height: 1;
 }
