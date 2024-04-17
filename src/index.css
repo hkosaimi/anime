@@ -181,7 +181,7 @@ img {
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jacquard+24&display=swap");
 
-div {
+.temp {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,7 +193,7 @@ body {
   color: #fff;
   height: 100vh;
 }
-p {
+.temp p {
   font-size: 70px;
   margin: 0;
   text-align: left;
@@ -201,4 +201,57 @@ p {
   background: -webkit-linear-gradient(90deg, #ddd0d0, #656363);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.navbar p {
+  font-size: 40px;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1.5;
+  font-family: "DM Serif Display";
+  background: -webkit-linear-gradient(90deg, #ddd0d0, #656363);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home {
+  padding: 0 4rem;
+  position: absolute;
+  top: 200px;
+}
+.home h1 {
+  font-size: 100px;
+  text-align: center;
+  color: #ffffff9c;
+  font-family: "DM Serif Display";
+}
+
+@media screen and (max-width: 768px) {
+  .navbar p {
+    font-size: 25px;
+  }
+  .home {
+    padding: 0 0;
+    width: 200px;
+    position: absolute;
+    top: 200px;
+    background: rgb(131, 5, 5);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: left;
+  }
+  .home h1 {
+    font-size: 40px;
+    text-align: left;
+  }
 }

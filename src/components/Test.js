@@ -36,6 +36,7 @@ function Test() {
   return (
     <>
       <motion.div
+        className="temp"
         variants={show ? xVariants : exitVariants}
         animate="visible"
         initial="hidden"
@@ -48,7 +49,14 @@ function Test() {
         variants={!show && exitVariants}
         animate="visible"
         initial="hidden"
-        style={{ display: "flex", flexDirection: "row", columnGap: "10px", marginTop: "20px" }}>
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          columnGap: "10px",
+          marginTop: "20px",
+          alignItems: "center",
+          justifyContent: "center",
+        }}>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
