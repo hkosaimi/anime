@@ -1,7 +1,8 @@
 import { motion, useTransform, useScroll, useMotionValueEvent, useAnimate } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 function Test() {
+  const [show, setShow] = useState(true);
   const title = ["I'm", "Hussain", "Al-Osaimi"];
   const xVariants = {
     hidden: {
@@ -19,11 +20,23 @@ function Test() {
       },
     },
   };
+  const exitVariants = {
+    visible: {
+      scale: [1, 1.1, 0],
+      transition: {
+        duration: 1,
+      },
+    },
+  };
 
+  setTimeout(() => {
+    setShow(false);
+  }, 3000);
+  console.log(xVariants.visible);
   return (
     <>
       <motion.div
-        variants={xVariants}
+        variants={show ? xVariants : exitVariants}
         animate="visible"
         initial="hidden"
         style={{ marginTop: "200px" }}>
@@ -31,7 +44,11 @@ function Test() {
           <motion.p variants={xVariants}>{x}</motion.p>
         ))}
       </motion.div>
-      <div style={{ display: "flex", flexDirection: "row", columnGap: "10px", marginTop: "20px" }}>
+      <motion.div
+        variants={!show && exitVariants}
+        animate="visible"
+        initial="hidden"
+        style={{ display: "flex", flexDirection: "row", columnGap: "10px", marginTop: "20px" }}>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
@@ -68,7 +85,7 @@ function Test() {
             d="M14 6H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1Zm7 11-6-2V9l6-2v10Z"
           />
         </svg>
-      </div>
+      </motion.div>
     </>
   );
 }
