@@ -178,7 +178,11 @@ img {
   bottom: 100px;
 }
  */
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jacquard+24&display=swap");
 
 .temp {
@@ -205,53 +209,48 @@ body {
 .navbar {
   display: flex;
   flex-direction: row;
-  column-gap: 20px;
-
+  column-gap: 40px;
+  background: #fff;
   position: fixed;
   top: 0;
   width: 100%;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 .navbar p {
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
-  font-weight: bold;
+
   line-height: 1.5;
-  font-family: "DM Serif Display";
-  background: -webkit-linear-gradient(90deg, #ddd0d0, #656363);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #000;
 }
-
-.home {
-  padding: 0 4rem;
+.gallary h1 {
   position: absolute;
-  top: 200px;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
 }
-.home h1 {
-  font-size: 100px;
-  text-align: center;
-  color: #ffffff9c;
-  font-family: "DM Serif Display";
-}
-
 @media screen and (max-width: 768px) {
   .navbar p {
     font-size: 25px;
   }
-  .home {
-    padding: 0 0;
-    width: 200px;
-    position: absolute;
-    top: 200px;
-    background: rgb(131, 5, 5);
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    text-align: left;
+  .gallary h1 {
+    font-size: 26px;
   }
-  .home h1 {
-    font-size: 40px;
-    text-align: left;
-  }
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
 }
