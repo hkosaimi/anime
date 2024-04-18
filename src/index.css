@@ -190,10 +190,15 @@ img {
   flex-direction: column;
   align-items: center;
   font-family: "DM Serif Display";
-}
-body {
+  height: 100vh;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  inset: 0;
   background: rgb(0, 0, 0);
   background: linear-gradient(45deg, rgba(0, 0, 0, 1) 24%, rgb(69, 68, 68) 100%) no-repeat;
+}
+body {
   color: #fff;
   height: 100vh;
 }
@@ -247,18 +252,20 @@ body {
   .res-nav {
     display: flex;
     position: fixed;
-    top: 0;
-    right: 0;
+    width: 100%;
     margin-right: 20px;
-    margin-top: 20px;
+    padding-top: 1rem;
     z-index: 2;
-    flex-direction: column;
+
     row-gap: 5px;
-    cursor: pointer;
+    align-items: center;
+    flex-direction: row;
+    flex-flow: row-reverse;
+    justify-content: space-between;
   }
-  .res-nav div {
-    width: 35px;
-    height: 5px;
+  .res-nav .line {
+    width: 32px;
+    height: 2px;
     background: #ffffff;
   }
 }
@@ -273,7 +280,7 @@ body {
   height: 100%; */
   display: flex;
   flex-direction: column;
-  background: blue;
+
   height: 0;
 }
 

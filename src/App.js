@@ -13,12 +13,12 @@ function App() {
   return (
     <>
       <Test />
-      {show && (
+      {/*  {show && (
         <>
-          <Navbar />
-          <Home />
         </>
-      )}
+      )} */}
+      <Navbar />
+      <Home />
     </>
   );
 }

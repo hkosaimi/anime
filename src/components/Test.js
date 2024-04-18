@@ -32,8 +32,8 @@ function Test() {
 
   setTimeout(() => {
     setShow(false);
-  }, 3000);
-  console.log(xVariants.visible);
+  }, 5000);
+
   return (
     <>
       {show && (
@@ -43,7 +43,7 @@ function Test() {
             variants={show ? xVariants : exitVariants}
             animate="visible"
             initial="hidden"
-            style={{ marginTop: "200px" }}>
+            style={{ paddingTop: "200px" }}>
             {title.map((x) => (
               <motion.p variants={xVariants}>{x}</motion.p>
             ))}
@@ -59,6 +59,10 @@ function Test() {
               marginTop: "20px",
               alignItems: "center",
               justifyContent: "center",
+              zIndex: "90000",
+              position: "absolute",
+              top: "50%",
+              left: "45%",
             }}>
             <motion.div
               initial={{ opacity: 0 }}

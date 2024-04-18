@@ -92,9 +92,73 @@ function Navbar() {
       <motion.div className="navbar" variants={xVariants} initial="hidden" animate="visible">
         <Navlinks />
       </motion.div>
+
       <div className="res-nav" onClick={handleClick}>
-        <motion.div variants={visible && lineVariants} animate="visible"></motion.div>
-        <motion.div variants={visible && lineVariants} animate="visible2"></motion.div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            rowGap: "5px",
+            cursor: "pointer",
+            paddingRight: "20px",
+          }}>
+          <motion.div
+            className="line"
+            variants={visible && lineVariants}
+            animate="visible"></motion.div>
+          <motion.div
+            className="line"
+            variants={visible && lineVariants}
+            animate="visible2"></motion.div>
+        </div>
+        <motion.div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            columnGap: "7px",
+
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: "90000",
+            paddingLeft: "20px",
+          }}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+              transition: {
+                repeat: Infinity,
+                duration: 1,
+              },
+            }}
+            style={{
+              width: "10px",
+              height: "10px",
+              background: "red",
+              borderRadius: "50%",
+            }}></motion.div>
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24">
+            <motion.path
+              initial={{ pathLength: 0 }}
+              animate={{
+                pathLength: 1,
+                transition: { duration: 3, repeat: Infinity },
+              }}
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M14 6H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1Zm7 11-6-2V9l6-2v10Z"
+            />
+          </svg>
+        </motion.div>
       </div>
       {visible && (
         <>

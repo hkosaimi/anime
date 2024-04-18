@@ -3,6 +3,10 @@ import { motion } from "framer-motion";
 import img2 from "../assets/2.jpg";
 import img3 from "../assets/3.jpg";
 import img4 from "../assets/4.jpg";
+import img5 from "../assets/5.jpg";
+import img6 from "../assets/6.jpg";
+import img7 from "../assets/7.jpg";
+import img8 from "../assets/8.jpg";
 
 function Image({ title, id }) {
   return (
@@ -23,9 +27,13 @@ function Home() {
     <>
       <div className="home">
         <div className="img-container">
-          <Image title="Vitrupe, Limbaži Municipality, Latvia" id={img4} />
-          <Image title="Standing Man Beside Camel on Desert" id={img2} />
-          <Image title="Türkiye" id={img3} />
+          <Image title="" id={img4} />
+          <Image title="" id={img2} />
+          <Image title="" id={img3} />
+          <Image title="" id={img5} />
+          <Image title="" id={img6} />
+          <Image title="" id={img7} />
+          <Image title="" id={img8} />
         </div>
       </div>
     </>
