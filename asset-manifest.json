@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/anime/static/css/main.c9f66b05.css",
-    "main.js": "/anime/static/js/main.0984bf72.js",
+    "main.css": "/anime/static/css/main.6fabb2e9.css",
+    "main.js": "/anime/static/js/main.ad740fd5.js",
     "static/media/2.jpg": "/anime/static/media/2.9bd2dd0ef980e28d28d7.jpg",
     "static/media/4.jpg": "/anime/static/media/4.4470a75bac8789604e55.jpg",
     "static/media/3.jpg": "/anime/static/media/3.774926794c3a90cb97da.jpg",
     "index.html": "/anime/index.html",
-    "main.c9f66b05.css.map": "/anime/static/css/main.c9f66b05.css.map",
-    "main.0984bf72.js.map": "/anime/static/js/main.0984bf72.js.map"
+    "main.6fabb2e9.css.map": "/anime/static/css/main.6fabb2e9.css.map",
+    "main.ad740fd5.js.map": "/anime/static/js/main.ad740fd5.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9f66b05.css",
-    "static/js/main.0984bf72.js"
+    "static/css/main.6fabb2e9.css",
+    "static/js/main.ad740fd5.js"
   ]
 }
