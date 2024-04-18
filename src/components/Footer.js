@@ -3,7 +3,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 const xVariants = {
-  hidden: { opacity: 1, scale: 0 },
+  hidden: { opacity: 0, scale: 0 },
   visible: {
     opacity: 1,
     scale: 1,
@@ -24,11 +24,26 @@ const item = {
     opacity: 1,
   },
 };
+
 function Footer() {
+  const str = "Al-Osaimi-Studio";
   return (
     <>
       <div className="footer">
-        <h1> Al-Osaimi Studio</h1>
+        <motion.div variants={xVariants} initial="hidden" whileInView="visible">
+          {str.split("").map((letter) => (
+            <motion.div
+              style={{
+                fontSize: "25px",
+                display: "inline-block",
+                fontFamily: "Pacifico",
+              }}
+              variants={item}>
+              {letter}
+            </motion.div>
+          ))}
+        </motion.div>
+
         <motion.div
           style={{ display: "flex", columnGap: "20px" }}
           variants={xVariants}

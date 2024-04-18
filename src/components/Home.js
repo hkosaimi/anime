@@ -7,7 +7,8 @@ import img5 from "../assets/5.jpg";
 import img6 from "../assets/6.jpg";
 import img7 from "../assets/7.jpg";
 import img8 from "../assets/8.jpg";
-import Footer from "./Footer";
+import img9 from "../assets/9.jpg";
+import img10 from "../assets/10.jpg";
 
 function Image({ title, id }) {
   return (
@@ -32,12 +33,14 @@ function Home() {
       <div className="home">
         <div className="img-container">
           <Image title="" id={img4} />
+          <Image title="" id={img9} />
           <Image title="" id={img2} />
           <Image title="" id={img3} />
           <Image title="" id={img5} />
           <Image title="" id={img6} />
           <Image title="" id={img7} />
           <Image title="" id={img8} />
+          <Image title="" id={img10} />
         </div>
         <motion.div className="progress" style={{ scaleX }} />
       </div>

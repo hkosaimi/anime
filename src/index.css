@@ -270,7 +270,7 @@ body {
 .img-container {
   display: flex;
   flex-direction: column;
-  height: 2100px;
+  height: 2660px;
   /*  scroll-snap-align: center; */
 }
 
@@ -313,8 +313,8 @@ body {
   row-gap: 10px;
 }
 .footer h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  font-family: monospace;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -335,5 +335,4 @@ body {
   transform-origin: 0%;
 }
 
-.gallary {
-}
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
