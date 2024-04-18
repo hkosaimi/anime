@@ -7,15 +7,12 @@ import img5 from "../assets/5.jpg";
 import img6 from "../assets/6.jpg";
 import img7 from "../assets/7.jpg";
 import img8 from "../assets/8.jpg";
+import Footer from "./Footer";
 
 function Image({ title, id }) {
   return (
     <>
-      <motion.div
-        className="gallary"
-        style={{ position: "relative", top: 0 }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}>
+      <motion.div className="gallary" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
         <img src={id} />
         <h1>{title}</h1>
       </motion.div>
