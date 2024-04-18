@@ -231,6 +231,9 @@ body {
   left: 50%;
   font-size: 40px;
 }
+.res-nav {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .navbar p {
     font-size: 25px;
@@ -238,19 +241,34 @@ body {
   .gallary h1 {
     font-size: 26px;
   }
+  .navbar {
+    display: none;
+  }
+
+  .res-nav {
+    background: #000;
+    position: static;
+    z-index: 1;
+  }
 }
 
 .home {
-  width: 100%;
-  height: 100%;
+  /*  width: 100%;
+  height: 100%; */
 }
 
 .img-container {
-  width: 100%;
-  height: 100%;
+  /*   width: 100%;
+  height: 100%; */
+  display: flex;
+  flex-direction: column;
+  background: blue;
+  height: 0;
 }
 
 .img-container img {
   width: 100%;
   height: 100%;
+}
+.img-container img:first-child {
 }

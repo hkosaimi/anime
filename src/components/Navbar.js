@@ -1,5 +1,5 @@
 import { motion, useTransform, useScroll, useMotionValueEvent, useAnimate } from "framer-motion";
-
+import { GiHamburgerMenu } from "react-icons/gi";
 function Navbar() {
   const xVariants = {
     hidden: {
@@ -25,6 +25,9 @@ function Navbar() {
         <motion.p variants={xVariants}>About</motion.p>
         <motion.p variants={xVariants}>Contact</motion.p>
       </motion.div>
+      <div className="res-nav">
+        <GiHamburgerMenu />
+      </div>
     </>
   );
 }

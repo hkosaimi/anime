@@ -9,7 +9,7 @@ function Image({ title, id }) {
     <>
       <motion.div
         className="gallary"
-        style={{ position: "relative" }}
+        style={{ position: "relative", top: 0 }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}>
         <img src={id} />
