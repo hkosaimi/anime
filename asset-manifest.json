@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/anime/static/css/main.52c97f1b.css",
-    "main.js": "/anime/static/js/main.b7e3fbc2.js",
-    "static/media/5.jpg": "/anime/static/media/5.aa42e1273787d8f3a85d.jpg",
-    "static/media/7.jpg": "/anime/static/media/7.0499e591f72a1d300295.jpg",
-    "static/media/2.jpg": "/anime/static/media/2.9bd2dd0ef980e28d28d7.jpg",
-    "static/media/6.jpg": "/anime/static/media/6.6136558d0c0b233207e3.jpg",
-    "static/media/4.jpg": "/anime/static/media/4.4470a75bac8789604e55.jpg",
-    "static/media/3.jpg": "/anime/static/media/3.774926794c3a90cb97da.jpg",
-    "static/media/8.jpg": "/anime/static/media/8.c1cc0502d5ed9596f180.jpg",
-    "static/media/10.jpg": "/anime/static/media/10.08628f482c67e839d028.jpg",
-    "static/media/9.jpg": "/anime/static/media/9.a951b4095979610ce5cc.jpg",
-    "index.html": "/anime/index.html",
-    "main.52c97f1b.css.map": "/anime/static/css/main.52c97f1b.css.map",
-    "main.b7e3fbc2.js.map": "/anime/static/js/main.b7e3fbc2.js.map"
+    "main.css": "/photography/static/css/main.52c97f1b.css",
+    "main.js": "/photography/static/js/main.2414ba3e.js",
+    "static/media/5.jpg": "/photography/static/media/5.aa42e1273787d8f3a85d.jpg",
+    "static/media/7.jpg": "/photography/static/media/7.0499e591f72a1d300295.jpg",
+    "static/media/2.jpg": "/photography/static/media/2.9bd2dd0ef980e28d28d7.jpg",
+    "static/media/6.jpg": "/photography/static/media/6.6136558d0c0b233207e3.jpg",
+    "static/media/4.jpg": "/photography/static/media/4.4470a75bac8789604e55.jpg",
+    "static/media/3.jpg": "/photography/static/media/3.774926794c3a90cb97da.jpg",
+    "static/media/8.jpg": "/photography/static/media/8.c1cc0502d5ed9596f180.jpg",
+    "static/media/10.jpg": "/photography/static/media/10.08628f482c67e839d028.jpg",
+    "static/media/9.jpg": "/photography/static/media/9.a951b4095979610ce5cc.jpg",
+    "index.html": "/photography/index.html",
+    "main.52c97f1b.css.map": "/photography/static/css/main.52c97f1b.css.map",
+    "main.2414ba3e.js.map": "/photography/static/js/main.2414ba3e.js.map"
   },
   "entrypoints": [
     "static/css/main.52c97f1b.css",
-    "static/js/main.b7e3fbc2.js"
+    "static/js/main.2414ba3e.js"
   ]
 }
