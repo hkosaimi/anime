@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 import img2 from "../assets/2.jpg";
 import img3 from "../assets/3.jpg";
 import img4 from "../assets/4.jpg";
@@ -19,7 +19,14 @@ function Image({ title, id }) {
     </>
   );
 }
+
 function Home() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
   return (
     <>
       <div className="home">
@@ -32,6 +39,7 @@ function Home() {
           <Image title="" id={img7} />
           <Image title="" id={img8} />
         </div>
+        <motion.div className="progress" style={{ scaleX }} />
       </div>
     </>
   );

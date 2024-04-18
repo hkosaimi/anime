@@ -146,9 +146,10 @@ function Navbar() {
             fill="none"
             viewBox="0 0 24 24">
             <motion.path
-              initial={{ pathLength: 0 }}
+              initial={{ pathLength: 0, fill: "rgba(255, 255, 255, 0)" }}
               animate={{
                 pathLength: 1,
+                fill: "rgba(255, 255, 255, 1)",
                 transition: { duration: 3, repeat: Infinity },
               }}
               stroke="currentColor"

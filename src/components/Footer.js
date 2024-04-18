@@ -3,19 +3,27 @@ import { BsTwitterX } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 const xVariants = {
-  hidden: {
-    y: "50px",
-  },
+  hidden: { opacity: 1, scale: 0 },
   visible: {
-    y: "0",
+    opacity: 1,
+    scale: 1,
     transition: {
-      duration: 1,
-      type: "spring",
+      delayChildren: 0.2,
       staggerChildren: 0.2,
     },
   },
 };
 
+const item = {
+  hidden: {
+    y: "50px",
+    opacity: 0,
+  },
+  visible: {
+    y: "0",
+    opacity: 1,
+  },
+};
 function Footer() {
   return (
     <>
@@ -26,16 +34,16 @@ function Footer() {
           variants={xVariants}
           initial="hidden"
           whileInView="visible">
-          <div>
+          <motion.div variants={item}>
             <FaInstagram className="insta" />
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div variants={item}>
             <BsTwitterX className="insta" />
-          </div>
-          <div>
+          </motion.div>
+          <motion.div variants={item}>
             <FaWhatsapp className="insta" />
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </>

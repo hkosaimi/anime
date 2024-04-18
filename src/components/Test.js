@@ -61,7 +61,7 @@ function Test() {
               justifyContent: "center",
               zIndex: "90000",
               position: "absolute",
-              top: "50%",
+              top: "54%",
               left: "45%",
             }}>
             <motion.div
@@ -76,7 +76,7 @@ function Test() {
               style={{
                 width: "10px",
                 height: "10px",
-                background: "green",
+                background: "red",
                 borderRadius: "50%",
               }}></motion.div>
             <svg
@@ -88,9 +88,10 @@ function Test() {
               fill="none"
               viewBox="0 0 24 24">
               <motion.path
-                initial={{ pathLength: 0 }}
+                initial={{ pathLength: 0, fill: "rgba(255, 255, 255, 0)" }}
                 animate={{
                   pathLength: 1,
+                  fill: "rgba(255, 255, 255, 1)",
                   transition: { duration: 3, repeat: Infinity },
                 }}
                 stroke="currentColor"
