@@ -122,6 +122,9 @@ function Navbar() {
             zIndex: "90000",
             paddingLeft: "20px",
           }}>
+          <p style={{ fontFamily: "Pacifico", filter: "drop-shadow(0 0 10px #000)" }}>
+            Al-Osaimi Studio
+          </p>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{
