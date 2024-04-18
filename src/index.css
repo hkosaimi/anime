@@ -267,14 +267,10 @@ body {
   }
 }
 
-.home {
-  width: 100%;
-}
-
 .img-container {
   display: flex;
   flex-direction: column;
-  height: 2370px;
+  height: 2100px;
   /*  scroll-snap-align: center; */
 }
 
@@ -337,4 +333,7 @@ body {
   height: 10px;
   background: red;
   transform-origin: 0%;
+}
+
+.gallary {
 }

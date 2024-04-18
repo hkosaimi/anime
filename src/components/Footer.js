@@ -28,7 +28,7 @@ function Footer() {
   return (
     <>
       <div className="footer">
-        <h1>Hussain Al-Osaimi Studio</h1>
+        <h1> Al-Osaimi Studio</h1>
         <motion.div
           style={{ display: "flex", columnGap: "20px" }}
           variants={xVariants}
