@@ -1,6 +1,7 @@
 import { motion, useTransform, useScroll, useMotionValueEvent, useAnimate } from "framer-motion";
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [visible, setVisible] = useState(false);
@@ -172,11 +173,28 @@ function Navbar() {
             variants={navVariants}
             initial="hidden"
             animate="visible">
-            <motion.p variants={linksVariants}>Home</motion.p>
+            <Link to="/">
+              <motion.p
+                onClick={() => {
+                  setVisible(false);
+                }}
+                variants={linksVariants}>
+                Home
+              </motion.p>
+            </Link>
+
             <motion.p variants={linksVariants}>Request</motion.p>
             <motion.p variants={linksVariants}>About</motion.p>
             <motion.p variants={linksVariants}>Contact</motion.p>
-            <motion.button variants={linksVariants}>LOG IN</motion.button>
+            <Link to="/login">
+              <motion.button
+                variants={linksVariants}
+                onClick={() => {
+                  setVisible(false);
+                }}>
+                LOG IN
+              </motion.button>
+            </Link>
           </motion.div>
         </>
       )}

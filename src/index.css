@@ -113,6 +113,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+.navlinks a {
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000a2;
+}
 .navlinks p {
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
@@ -162,4 +171,72 @@ body {
   color: #fff;
   background: #008cff;
   box-shadow: 0 0 15px #008cff;
+}
+
+.signup {
+  height: 100vh;
+  padding: 3rem 2rem;
+  width: 100%;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(45deg, rgb(20, 22, 23) 0%, rgb(33, 39, 42) 100%) no-repeat;
+}
+.form_container {
+  background: linear-gradient(45deg, rgb(20, 22, 23) 0%, rgb(33, 39, 42) 100%) no-repeat;
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+  width: 80%;
+  margin: 100px auto;
+}
+.form_container h1 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: "Poppins";
+  background: -webkit-linear-gradient(45deg, #eee, #8d8383);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+form {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+form input {
+  padding: 7px 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+  color: #000000;
+  font-size: 15px;
+  background: rgb(210, 208, 208);
+  box-shadow: 0 5px 20px 1px rgb(0, 0, 0);
+  width: 100%;
+}
+form label {
+  margin-bottom: 5px;
+  margin-top: 30px;
+  font-size: 17px;
+}
+form button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px 10px;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 7px;
+  background: #04df75;
+  box-shadow: 0 0 20px -2px #04df75;
+  cursor: pointer;
+  color: #000000;
+}
+form button:hover {
+  box-shadow: 0 0 30px -2px #04df75;
+}
+form button:active {
+  box-shadow: 0 0 30px -2px #04df75;
 }
