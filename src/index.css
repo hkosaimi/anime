@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -109,7 +108,7 @@ body {
   background: #fff;
   color: #000000a2;
   border-radius: 10px;
-  padding: 2rem 2rem;
+  padding: 3rem 2rem;
   user-select: none;
   justify-content: center;
   align-items: center;
@@ -154,3 +153,13 @@ body {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.navlinks button {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #fff;
+  background: #008cff;
+  box-shadow: 0 0 15px #008cff;
+}

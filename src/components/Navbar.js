@@ -65,13 +65,14 @@ function Navbar() {
     },
     visible: {
       width: "200px",
-      height: "300px",
+      height: "350px",
       opacity: 1,
       transition: {
         duration: 1,
         type: "spring",
         stiffness: 50,
         staggerChildren: 0.2,
+        delayChildren: 0.3,
       },
     },
   };
@@ -83,7 +84,7 @@ function Navbar() {
       x: 0,
 
       transition: {
-        ease: "easeInOut",
+        ease: "easeIn",
       },
     },
   };
@@ -175,6 +176,7 @@ function Navbar() {
             <motion.p variants={linksVariants}>Request</motion.p>
             <motion.p variants={linksVariants}>About</motion.p>
             <motion.p variants={linksVariants}>Contact</motion.p>
+            <motion.button variants={linksVariants}>LOG IN</motion.button>
           </motion.div>
         </>
       )}
